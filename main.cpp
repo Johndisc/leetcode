@@ -1,25 +1,32 @@
 #include <iostream>
 #include <cmath>
-#include "n264(todo).h"
+#include "n381.h"
 
 using namespace std;
 
 int main() {
-
-    set<int> s{1,2,3};
-    auto it = s.end();
-    transform(s.begin(), it, inserter(s, s.begin()), [] (int n) {
-        return n * 2;
-    });
-
-    Solution solution;
-    vector<int> asd{0,3,7,2,5,8,4,6,0,1};
+//    Solution solution;
+    vector<int> asd{4,1,-1,2,-1,2,3};
     vector<int> asd1{9,3,15,20,7};
     vector<vector<int>> qwe{{1,1},{3,2},{5,3},{4,1},{2,3},{1,4}};
     vector<string> zxc{"apple","pen","applepen","pine","pineapple"};
 
-    auto res = solution.nthUglyNumber(10);
-    cout << res << endl;
+    RandomizedCollection randomizedCollection;
+    randomizedCollection.insert(10);
+//    randomizedCollection.insert(10);
+//    randomizedCollection.insert(20);
+//    randomizedCollection.insert(20);
+//    randomizedCollection.insert(30);
+//    randomizedCollection.insert(30);
+    randomizedCollection.remove(10);
+    randomizedCollection.insert(10);
+    randomizedCollection.print();
+//    randomizedCollection.remove(20);
+//    randomizedCollection.print();
+//    randomizedCollection.remove(20);
+//    randomizedCollection.remove(10);
+//    auto res = solution.topKFrequent(asd, 2);
+//    cout << res << endl;
 
 //    for (auto &item1:res)
 //        cout << item1 << endl;
