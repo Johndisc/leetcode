@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cmath>
-#include "n50.h"
+#include "n60.h"
 
 using namespace std;
 
@@ -11,7 +11,7 @@ int main() {
     vector<vector<int>> qwe{{1,1},{3,2},{5,3},{4,1},{2,3},{1,4}};
     vector<string> zxc{"apple","pen","applepen","pine","pineapple"};
 
-    auto res = solution.myPow(2, -2);
+    auto res = solution.getPermutation(4,9);
     cout << res << endl;
 
 //    for (auto &item1:res)
