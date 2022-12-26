@@ -1,17 +1,17 @@
 #include <iostream>
 #include <cmath>
-#include "n60.h"
+#include "n81.h"
 
 using namespace std;
 
 int main() {
     Solution solution;
-    vector<int> asd{4,1,-1,2,-1,2,3};
+    vector<int> asd{2,5,6,0,0,1,2};
     vector<int> asd1{9,3,15,20,7};
     vector<vector<int>> qwe{{1,1},{3,2},{5,3},{4,1},{2,3},{1,4}};
     vector<string> zxc{"apple","pen","applepen","pine","pineapple"};
 
-    auto res = solution.getPermutation(4,9);
+    auto res = solution.search(asd, 5);
     cout << res << endl;
 
 //    for (auto &item1:res)
