@@ -9,21 +9,22 @@
 class Solution {
 public:
     int largestRectangleArea(vector<int>& heights) {
-        int size = heights.size(), mx = 0;
-        int low[size][size + 1], area[size][size + 1];
+        int size = heights.size(), mx = 0, width, ht;
+        stack<int> mono;
         for (int i = 0; i < size; ++i) {
-            low[i][1] = heights[i];
-        }
-        for (int i = 0; i < size - 1; ++i) {
-            for (int j = 2; j <= size - i; ++j) {
-                low[i][j] = min(low[i][j - 1], heights[i + j - 1]);
+            while (!mono.empty() && heights[i] < heights[mono.top()]) {
+                ht = mono.top();
+                mono.pop();
+                width = mono.empty() ? i : i - mono.top() - 1;
+                mx = max(mx, heights[ht] * width);
             }
+            mono.push(i);
         }
-        for (int i = 0; i < size - 1; ++i) {
-            for (int j = 1; j <= size - i; ++j) {
-                area[i][j] = j * low[i][j];
-                mx = max(area[i][j], mx);
-            }
+        while (!mono.empty()) {
+            ht = mono.top();
+            mono.pop();
+            width = mono.empty() ? size : size - mono.top() - 1;
+            mx = max(mx, heights[ht] * width);
         }
         return mx;
     }
