@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cmath>
-#include "n85.h"
+#include "n87(dp).h"
 
 using namespace std;
 
@@ -11,7 +11,7 @@ int main() {
     vector<vector<int>> qwe{{1,1},{3,2},{5,3},{4,1},{2,3},{1,4}};
     vector<string> zxc{"apple","pen","applepen","pine","pineapple"};
 
-    auto res = solution.maximalRectangle(asd1);
+    auto res = solution.isScramble("great", "rgeat");
     cout << res << endl;
 
 //    for (auto &item1:res)
