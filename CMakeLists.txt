@@ -3,5 +3,5 @@ project(leetcode)
 
 set(CMAKE_CXX_STANDARD 14 -O2)
 
-add_executable(leetcode main.cpp "n44(dp).h" n102.h n103.h n104.h)
+add_executable(leetcode main.cpp "n44(dp).h" n102.h n103.h n104.h n107.h n108.h "n109(fast and slow pointer).h" n110.h n111.h n112.h n113.h n114.h)
 
