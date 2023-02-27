@@ -1,16 +1,16 @@
 #include <iostream>
-#include "n207.h"
+#include "n309.h"
 
 using namespace std;
 
 int main() {
     Solution solution;
-    vector<int> asd{3,6,9,1};
+    vector<int> asd{1,2,3,0,2};
     vector<int> asd1{3,4,3};
     vector<vector<int>> qwe{{1,0}};
     vector<string> zxc{"apple","pen","applepen","pine","pineapple"};
 	
-	auto res = solution.canFinish(2, qwe);
+	auto res = solution.maxProfit(asd);
     cout << res << endl;
 
 //    for (auto &item1:res)
