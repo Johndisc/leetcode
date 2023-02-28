@@ -3,5 +3,5 @@ project(leetcode)
 
 set(CMAKE_CXX_STANDARD 14 -O2)
 
-add_executable(leetcode main.cpp "n211(todo, Trie).h" n213.h n221.h "n233(todo).h" n241.h "n279(todo, dp).h" n300.h n309.h n313.h n322.h "n329(todo,dfs).h" n337.h n338.h n343.h n354.h)
+add_executable(leetcode main.cpp "n211(todo, Trie).h" n213.h n221.h "n233(todo).h" n241.h "n279(todo, dp).h" n300.h n309.h n313.h n322.h "n329(todo,dfs).h" n337.h n338.h n343.h n354.h n357.h n368.h n373.h)
 
