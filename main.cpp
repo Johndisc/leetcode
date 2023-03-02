@@ -1,5 +1,5 @@
 #include <iostream>
-#include "n377.h"
+#include "n316.h"
 
 using namespace std;
 
@@ -10,7 +10,7 @@ int main() {
     vector<vector<int>> qwe{{1,0}};
     vector<string> zxc{"apple","pen","applepen","pine","pineapple"};
 	
-	auto res = solution.combinationSum4(asd, 999);
+	auto res = solution.removeDuplicateLetters("bcabc");
     cout << res << endl;
 
 //    for (auto &item1:res)
