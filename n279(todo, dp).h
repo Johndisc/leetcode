@@ -12,7 +12,10 @@ public:
 		if (dp[n] != INT_MAX)
 			return dp[n];
 		for (int i = 1; i < n; ++i) {
-			dp[n] = min(dp[n], minNum(dp, i) + minNum(dp, n - i));
+			if (i * i < n)
+				dp[n] = min(dp[n], 1 + minNum(dp, n - i * i));
+			else
+				break;
 		}
 		return dp[n];
 	}

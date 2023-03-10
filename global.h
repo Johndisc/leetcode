@@ -15,6 +15,7 @@
 #include <queue>
 #include <map>
 #include <cmath>
+#include <list>
 
 using namespace std;
 
